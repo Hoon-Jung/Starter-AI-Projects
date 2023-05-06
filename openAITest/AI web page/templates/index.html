@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <form method="POST">
+      <input type="text" name="message">
+      <button type="submit" name="send">Send</button>
+    </form>
+
+    {% if result %}
+        {% for msg in result %}
+            {{ msg }} <br>
+        {% endfor %}
+    {% endif %}
+  </body>
+</html>
