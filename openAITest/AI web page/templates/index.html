@@ -6,8 +6,11 @@
     </form>
 
     {% if result %}
-        {% for msg in result %}
-            {{ msg }} <br>
+        {% for index in result %}
+          {% for msg in index %}
+            {{ msg }}
+          {% endfor %}
+        <br>
         {% endfor %}
     {% endif %}
   </body>
