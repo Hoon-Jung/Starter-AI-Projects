@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Boxes</title>
+    <style>
+        .color-box {
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin: 5px;
+        }
+    </style>
+    <script>
+        // function generateRandomColor() {
+        //     var letters = '0123456789ABCDEF';
+        //     var color = '#';
+        //     for (var i = 0; i < 6; i++) {
+        //         color += letters[Math.floor(Math.random() * 16)];
+        //     }
+        //     return color;
+        // }
+        
+        // function createColorBoxes() {
+        //     var colorBoxContainer = document.getElementById('color-box-container');
+        //     colorBoxContainer.innerHTML = ''; // Clear any existing color boxes
+        //     for (var i = 0; i < 5; i++) {
+        //         var colorBox = document.createElement('div');
+        //         colorBox.className = 'color-box';
+        //         colorBox.style.backgroundColor = generateRandomColor();
+        //         colorBoxContainer.appendChild(colorBox);
+        //     }
+        // }
+    </script>
+</head>
+<body>
+    <form method="POST">
+        <input type="text" name="message"><br>
+        <button type="submit" name="send" onclick="createColorBoxes()">Submit</button>
+    </form>
+    {% if result %}
+        {% for msg in index %}
+            {{ msg }}<br>
+        {% endfor %}
+        
+    {% endif %}
+</body>
+</html>
