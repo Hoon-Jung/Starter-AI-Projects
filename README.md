@@ -1,5 +1,2 @@
-# test
-**print("hello world")**
-
-1. list 1
-2. list 2
+# Starter AI Projects
+This repository contains my first two AI projects which both integrate OpenAI's ChatGPT
